@@ -1,0 +1,173 @@
+
+html, 
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;  
+    box-sizing: border-box;  
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    height: 100%;
+    background: url('../img/bg_plug.jpg') center 25% no-repeat;
+    background-size: cover;
+}
+
+.container {
+    height: 100%;
+    margin: 0 auto;
+    overflow: auto;   
+}
+
+.logo {
+    margin: 40px auto auto 70px;
+    width: 31vh;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.content {
+    height: 60%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.content_bg {
+    box-sizing: border-box;
+    height: 280px;
+    background-color: rgba(9, 160, 201, 0.72);
+}
+
+.description__text {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.description__text__container {
+    padding: 45px 30px 60px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.country__choice-container {
+    padding: 40px 60px 30px 50px;
+}
+
+.country__text {
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button {
+    width: 245px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 20px;
+    border-radius: 4px; 
+    text-align: center;
+    transition: all .7s;
+    color: #ffffff;
+    box-shadow: 0px 2px 0px 0px rgba(255,255,255,1);
+}
+
+.button__kenya {
+    background-color: #f66e1e;
+}
+
+.button__nigeria {
+    background-color: #d5b607;
+    margin-bottom: 20px;    
+}
+
+.button__kenya:hover {
+    background-color: #ff2600;
+}
+
+.button__nigeria:hover {
+    background-color: #ffd500;
+}
+
+// 1200 was here start
+    .content_bg {
+        height: 220px;
+    }
+    .description__text {
+        font-size: 24px;
+    }
+    
+    .description__text__container {
+        padding: 45px 10px 40px 70px;
+        max-width: 350px;
+    }
+
+    .country__choice-container {
+        padding: 20px 65px 10px 40px
+    }
+    .country__text {
+        font-size: 24px;
+    }
+// 1200 was here end
+   
+@media only screen and (max-width: 768px) {
+    .logo {
+        margin: 5px auto 5px auto;
+        padding: 5px 5px 3px 5px;
+        text-align: center;
+        background-color: rgba(255,255,255,0.5);
+        width: 31vh;
+    }
+    .content {
+        background-color: rgba(9, 160, 201, 0.72);
+        width: 300px;
+        height: auto;        
+        flex-direction: column-reverse;
+        align-items: center;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .button {
+        height: 35px;
+        line-height: 35px;
+        font-size: 18px;
+    }
+    .button__kenya {
+        margin: 0 auto;
+    }
+    .button__nigeria {
+        margin: 0px auto 10px auto;
+    }
+    .content_bg {
+        background-color: transparent;
+        height: auto;
+    }
+    .country__choice-container {
+        padding: 10px 20px 10px 20px;
+        text-align: center;
+    }
+
+    .description__text {
+        font-size: 20px;
+    }
+
+    .description__text__container {
+        padding: 10px 10px 20px 20px;
+        height: 85px;
+        font-size: 14px;
+    }
+    .country__text {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+}
